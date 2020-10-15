@@ -1,0 +1,27 @@
+
+// Custom.scss
+$theme-colors: (
+  "mine":  #666
+);
+
+$border-radius-custom: 5rem;
+
+// Create your own map
+$custom-colors: (
+  "custom-color": #900
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    height: 600px;
+}
+
+
